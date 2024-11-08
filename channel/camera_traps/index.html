@@ -6622,7 +6622,7 @@ Excited to be part of the community. We are a multifield STEM team from The Univ
                     <p><strong><em>*Thread Reply:</em></strong>* I'm attaching a file with more (but not all) missing locations from "recommended train/val/test splits".</p>
                     
                     <div class="message-upload">
-                            <div class="link-title"><a href="https://files.slack.com/files-pri/TM808NB0D-F0288T51R8R/location_to_species.txt?t=xoxe-722008759013-7562008015927-7576556608226-c2910f7b7de02166d9ff289dd98396cc">location_to_species.txt</a></div>
+                            <div class="link-title"><a href="https://files.slack.com/files-pri/TM808NB0D-F0288T51R8R/location_to_species.txt?t=xoxe-722008759013-8001648952405-8001649027285-e908ed5a494ea9622844f6cd2ea59448">location_to_species.txt</a></div>
                             
                                 
     
@@ -15426,6 +15426,842 @@ Basically, by using the <https://stackoverflow.com/questions/78039408/cv2-ffmpeg
                     
                         <div class="message-reaction">
                         👍 michele volpi
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-23 10:51:46">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-12/4357035401990_ce3457a96c5262c48b08_72.png" class="user_icon" />
+            
+            
+                <div class="message">
+            
+                <div class="username">Eric Cunningham
+                     <span class="print-only user-email">(ejcunningham@gmail.com)</span>
+                </div>
+                <a href="#2024-08-23 10:51:46"><div class="time">2024-08-23 10:51:46</div></a>
+                <div class="msg">
+                    <p>Hi friends, I wonder if anyone has advice for an image classification problem I am trying to tackle. I am looking to identify turtles in top-down camera trap images, or rather split them into 3 classes: [turtle, other_animal, empty]. Unfortunately, the top-down nature of these images seemingly renders off-the-shelf tools like megadetector helpless.</p>
+
+<p>I have a modest data set of about 50k images, about 10% of which contain turtles. They are labeled into the 3 classes but they are uncropped and contain no bounding boxes or other annotations. The turtles are fairly large in the frame, so I’m hoping it might be possible to train a whole-image classifier for this problem as off-the-shelf detectors aren’t helpful</p>
+
+<p>As a first stab I started playing around (rather unsuccessfully) with ResNet-18 on this dataset via pytorch/timm. Unfortunately, I don’t have much experience with this sort of thing, so I’m wondering if anyone has any opinions about architectures and/or resources they’d recommend that would be helpful for such a problem?</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-23 10:58:05">
+            
+                <img src="https://avatars.slack-edge.com/2020-06-09/1197266804320_df3cb0235dd3aee97857_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Carly Batist
+                     <span class="print-only user-email">(cbatist@gradcenter.cuny.edu)</span>
+                </div>
+                <a href="#2024-08-23 10:58:05"><div class="time">2024-08-23 10:58:05</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* @Dan Morris loves to hear about cases where megadetector fails! And he likely will have advice for other options for ya</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-23 11:27:21">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-12/4357035401990_ce3457a96c5262c48b08_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Eric Cunningham
+                     <span class="print-only user-email">(ejcunningham@gmail.com)</span>
+                </div>
+                <a href="#2024-08-23 11:27:21"><div class="time">2024-08-23 11:27:21</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Hi Carly! Yes Dan has previously weighed in on this and is actually the one who steered me down the classifier path</p>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        💯 Carly Batist
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-23 20:41:13">
+            
+                <img src="https://secure.gravatar.com/avatar/5e1c5ddc888b49c919bcfd43e4b9cb3d.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0024-72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Ben Weinstein
+                     <span class="print-only user-email">(benweinstein2010@gmail.com)</span>
+                </div>
+                <a href="#2024-08-23 20:41:13"><div class="time">2024-08-23 20:41:13</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Can you show a sample photo?</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-23 23:30:00">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-12/4357035401990_ce3457a96c5262c48b08_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Eric Cunningham
+                     <span class="print-only user-email">(ejcunningham@gmail.com)</span>
+                </div>
+                <a href="#2024-08-23 23:30:00"><div class="time">2024-08-23 23:30:00</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Sample:</p>
+                    
+                    <div class="message-upload">
+                            <div class="link-title"><a href="https://files.slack.com/files-pri/TM808NB0D-F07K0KTTBMW/example.jpg?t=xoxe-722008759013-8001648952405-8001649027285-e908ed5a494ea9622844f6cd2ea59448">example.jpg</a></div>
+                            
+                                
+    
+        <a href="https://files.slack.com/files-pri/TM808NB0D-F07K0KTTBMW/example.jpg?t=xoxe-722008759013-8001648952405-8001649027285-e908ed5a494ea9622844f6cd2ea59448">
+            <img class="preview" src="https://files.slack.com/files-tmb/TM808NB0D-F07K0KTTBMW-b2999a3883/example_360.jpg?t=xoxe-722008759013-8001648952405-8001649027285-e908ed5a494ea9622844f6cd2ea59448"
+                width="360"
+                 height="248" />
+        </a>
+    
+                            
+                        </div>
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-23 23:35:54">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-12/4357035401990_ce3457a96c5262c48b08_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Eric Cunningham
+                     <span class="print-only user-email">(ejcunningham@gmail.com)</span>
+                </div>
+                <a href="#2024-08-23 23:35:54"><div class="time">2024-08-23 23:35:54</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* This is a ‘middle of the road’ example in terms of clarity. Some are more clear (more contrast/not submerged or muddy), others are more obstructed or partially out of frame</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-24 08:28:14">
+            
+                <img src="https://avatars.slack-edge.com/2021-01-11/1652047804128_8216640d1f5e36e41ef5_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Dan Morris
+                     <span class="print-only user-email">(agentmorris@gmail.com)</span>
+                </div>
+                <a href="#2024-08-24 08:28:14"><div class="time">2024-08-24 08:28:14</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* There are a few more examples from this data set on the "MegaDetector challenges" page; they are the ones credited to Michael Knoerr:</p>
+
+<p><a href="https://github.com/agentmorris/MegaDetector/blob/main/megadetector-challenges.md#reptiles-and-other-under-represented-species">https://github.com/agentmorris/MegaDetector/blob/main/megadetector-challenges.md#reptiles-and-other-under-represented-species</a></p>
+
+<p>@Eric Cunningham, it may be helpful to share the rough data set size and class distribution.  The dataset is relatively small, but not silly-small, so IMO ResNet-18 is about as much as one could train without freezing anything, but I don't have a great sense for the tradeoffs wrt training about the same number of parameters in a larger model.  Inference time is not a big issue.</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-24 12:14:30">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-12/4357035401990_ce3457a96c5262c48b08_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Eric Cunningham
+                     <span class="print-only user-email">(ejcunningham@gmail.com)</span>
+                </div>
+                <a href="#2024-08-24 12:14:30"><div class="time">2024-08-24 12:14:30</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Here is the class breakdown for the dataset:
+```other<em>animal    3015
+turtle          5227
+no</em>animal       41195</p>
+
+<p>total           49437```
+These are from 8 cameras with a dozen or so placements each</p>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        🐢 Dan Morris, Arthur Caillau
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-28 06:39:01">
+            
+                <img src="https://secure.gravatar.com/avatar/2a41b678b0e80a5d037cf16a0b7d8592.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0022-72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Arthur Caillau
+                     <span class="print-only user-email">(arthur@caillau.me)</span>
+                </div>
+                <a href="#2024-08-28 06:39:01"><div class="time">2024-08-28 06:39:01</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Do you need to classify these images, count the turtles in it, or localize them precisely in the frame? These are different CV tasks. A very good off the shelf solution is just to go with YOLO (v10 is out now but v8 is still a great pick) from ultralytics and prepare your dataset for training. It can do image classification and object detection (even bytetracking if you need to count animals using video streams).</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-28 13:12:56">
+            
+                <img src="https://avatars.slack-edge.com/2023-08-12/5729572396613_37c6726ad5d913013f67_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Aakash Gupta
+                     <span class="print-only user-email">(aakash@thinkevolveconsulting.com)</span>
+                </div>
+                <a href="#2024-08-28 13:12:56"><div class="time">2024-08-28 13:12:56</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Its not clear if you are trying to train a classifier the task or trying to train a model that can localize it (generate bounding boxes around the detection) If you are looking at the later (generating bboxes). You can check the Yolo family.
+Also try out zero-shot segmentation engines. Like the recent segment-anything-2 model. Should work for such usecases. Just run the images which have turtles in them first and mark the area of interest (the turtles)</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-28 19:34:49">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-12/4357035401990_ce3457a96c5262c48b08_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Eric Cunningham
+                     <span class="print-only user-email">(ejcunningham@gmail.com)</span>
+                </div>
+                <a href="#2024-08-28 19:34:49"><div class="time">2024-08-28 19:34:49</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* For now I’m am looking to classify the images. Thanks for the suggestions, will check these out</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-29 00:05:14">
+            
+                <img src="https://avatars.slack-edge.com/2023-08-12/5729572396613_37c6726ad5d913013f67_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Aakash Gupta
+                     <span class="print-only user-email">(aakash@thinkevolveconsulting.com)</span>
+                </div>
+                <a href="#2024-08-29 00:05:14"><div class="time">2024-08-29 00:05:14</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Just fyi this is the output of a zero-shot model. If that helps.</p>
+                    
+                    <div class="message-upload">
+                            <div class="link-title"><a href="None"></a></div>
+                            
+                                
+    
+        <!-- no preview available -->
+    
+                            
+                        </div>
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-29 00:07:04">
+            
+                <img src="https://avatars.slack-edge.com/2023-08-12/5729572396613_37c6726ad5d913013f67_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Aakash Gupta
+                     <span class="print-only user-email">(aakash@thinkevolveconsulting.com)</span>
+                </div>
+                <a href="#2024-08-29 00:07:04"><div class="time">2024-08-29 00:07:04</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* </p>
+                    
+                    <div class="message-upload">
+                            <div class="link-title"><a href="https://files.slack.com/files-pri/TM808NB0D-F07KDDWPK8R/image_turtle2.webp?t=xoxe-722008759013-8001648952405-8001649027285-e908ed5a494ea9622844f6cd2ea59448">image_turtle2.webp</a></div>
+                            
+                                
+    
+        <a href="https://files.slack.com/files-pri/TM808NB0D-F07KDDWPK8R/image_turtle2.webp?t=xoxe-722008759013-8001648952405-8001649027285-e908ed5a494ea9622844f6cd2ea59448">
+            <img class="preview" src="https://files.slack.com/files-tmb/TM808NB0D-F07KDDWPK8R-a81f2c5b25/image_turtle2_360.png?t=xoxe-722008759013-8001648952405-8001649027285-e908ed5a494ea9622844f6cd2ea59448"
+                width="360"
+                 height="248" />
+        </a>
+    
+                            
+                        </div>
+                    
+                    
+                        <div class="message-reaction">
+                        🤯 Eric Cunningham
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-09-03 15:17:13">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-12/4357035401990_ce3457a96c5262c48b08_72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Eric Cunningham
+                     <span class="print-only user-email">(ejcunningham@gmail.com)</span>
+                </div>
+                <a href="#2024-09-03 15:17:13"><div class="time">2024-09-03 15:17:13</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* I tried out YOLOv8 over the weekend and I’m seeing some pretty promising results! Thanks for the recommendation @Aakash Gupta and @Arthur Caillau!</p>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        👍 Aakash Gupta, Arthur Caillau
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-09-23 12:25:25">
+            
+                <img src="https://secure.gravatar.com/avatar/25105e7305cb76431df43c3b67fcd8df.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Ross Gardiner
+                     <span class="print-only user-email">(ross.gardiner@dynaikon.com)</span>
+                </div>
+                <a href="#2024-09-23 12:25:25"><div class="time">2024-09-23 12:25:25</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Just chiming in here, might be late to the party but you may find success in using BIOCLIP with zero-shot text inputs for your classes. <a href="https://huggingface.co/spaces/imageomics/bioclip-demo">https://huggingface.co/spaces/imageomics/bioclip-demo</a></p>
+                    <div class="message-attachment"
+                            >
+                            <div class="service-name">huggingface.co</div>
+                            
+                            
+                                
+                                <div class="link-title"><a href="https://huggingface.co/spaces/imageomics/bioclip-demo">Bioclip Demo - a Hugging Face Space by imageomics</a></div>
+                                <div class="link-text">
+                                    Discover amazing ML apps made by the community
+                                </div>
+                                
+                                
+    
+        <a href="https://huggingface.co/spaces/imageomics/bioclip-demo">
+            <img class="preview" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/imageomics/bioclip-demo.png"
+                width="1200"
+                 height="648" />
+        </a>
+    
+                                
+                                    <div class="print-only">Original URL: https://huggingface.co/spaces/imageomics/bioclip-demo</div>
+                                
+                                
+                            
+                        </div>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-30 17:39:43">
+            
+                <img src="https://secure.gravatar.com/avatar/89cbe0fc12b2cc92d129f14b0a5f665e.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png" class="user_icon" />
+            
+            
+                <div class="message">
+            
+                <div class="username">Mathias Tobler
+                     <span class="print-only user-email">(matobler@gmx.net)</span>
+                </div>
+                <a href="#2024-08-30 17:39:43"><div class="time">2024-08-30 17:39:43</div></a>
+                <div class="msg">
+                    <p><strong>Letterboxing or not?</strong> We use the MegaDetector followed by image classifier (mostly EfficientNetV2 now) pipeline for all of our camera trap image processing. We were wondering if there was a difference between using letterboxing (zero-padding) vs just resizing when creating cropped images for the classification step. Intuitively, resizing can significantly distort images as aspect ratios of crops can vary greatly. What are others doing? Has anyone compare the two with camera trap data?</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-31 07:02:45">
+            
+                <img src="https://avatars.slack-edge.com/2022-02-09/3075038202214_f9ee2a2a94dcc3815f28_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Peter van Lunteren
+                     <span class="print-only user-email">(contact@pvanlunteren.com)</span>
+                </div>
+                <a href="#2024-08-31 07:02:45"><div class="time">2024-08-31 07:02:45</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Hi @Mathias Tobler, I’m using square crops with padding. This makes sure that the animals are not distorted. I’ve also heard some people just squeezing it in a square, which also works well since an animal is generally squeezed in the same manner. I never compared the two though… </p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-31 07:05:13">
+            
+                <img src="https://avatars.slack-edge.com/2022-02-09/3075038202214_f9ee2a2a94dcc3815f28_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Peter van Lunteren
+                     <span class="print-only user-email">(contact@pvanlunteren.com)</span>
+                </div>
+                <a href="#2024-08-31 07:05:13"><div class="time">2024-08-31 07:05:13</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* With regards to the padding, I use a fixed padding for ‘normal’ sized animals and a larger padding for small animals like rodents etc. This to make sure a mouse doesn’t look like a bear when resized 😁 </p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-31 07:05:35">
+            
+                <img src="https://avatars.slack-edge.com/2022-02-09/3075038202214_f9ee2a2a94dcc3815f28_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Peter van Lunteren
+                     <span class="print-only user-email">(contact@pvanlunteren.com)</span>
+                </div>
+                <a href="#2024-08-31 07:05:35"><div class="time">2024-08-31 07:05:35</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Let me know if you want the Python code for this.</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-09-03 12:47:03">
+            
+                <img src="https://secure.gravatar.com/avatar/89cbe0fc12b2cc92d129f14b0a5f665e.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Mathias Tobler
+                     <span class="print-only user-email">(matobler@gmx.net)</span>
+                </div>
+                <a href="#2024-09-03 12:47:03"><div class="time">2024-09-03 12:47:03</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Thanks @Peter van Lunteren. Interesting about the padding size, first time I hear that.</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-01 04:02:24">
+            
+                <img src="https://avatars.slack-edge.com/2024-01-19/6512878648145_64b95f1f53ed7105d7d4_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Hugo Magaldi
+                     <span class="print-only user-email">(magaldi.hugo@gmail.com)</span>
+                </div>
+                <a href="#2024-10-01 04:02:24"><div class="time">2024-10-01 04:02:24</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Hi  @Mathias Tobler,  I'm a bit late on this thread, but if it helps: I've tried both square crops and resizing on a large dataset (2M images, 25 classes) and there was no significant difference on the overall performance. Of course this would require finer analysis. Would love to know your conclusions if you look into it.</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-02 16:23:36">
+            
+                <img src="https://secure.gravatar.com/avatar/89cbe0fc12b2cc92d129f14b0a5f665e.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Mathias Tobler
+                     <span class="print-only user-email">(matobler@gmx.net)</span>
+                </div>
+                <a href="#2024-10-02 16:23:36"><div class="time">2024-10-02 16:23:36</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Hi @Hugo Magaldi thanks for sharing those results. We have used letterboxing in earlier model and just standard resize more recently. There have been many other changes (training data size, model architecture) so a direct comparison is not possible. We might need to run some experiments to compare the two.</p>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        👍 Hugo Magaldi
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-08 22:11:32">
+            
+                <img src="https://avatars.slack-edge.com/2023-09-08/5869613577747_0ca93b5fea80e0bd83bd_72.jpg" class="user_icon" />
+            
+            
+                <div class="message">
+            
+                <div class="username">Tiziana Gelmi Candusso
+                     <span class="print-only user-email">(tiziana.gelmi@gmail.com)</span>
+                </div>
+                <a href="#2024-10-08 22:11:32"><div class="time">2024-10-08 22:11:32</div></a>
+                <div class="msg">
+                    <p>Widlife insights insight need, pun intended, we have been uploading and classifying photos on wildlife insights for a project. We've noticed that in the 'sequence' format, some empty photos get grouped in as 'empty' AND 'human'. They are usually within a few seconds of one another, could it be wildlife insights classifier just groups photos as 'human' if they are within a few seconds of a human detection? Any experience with this?</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-08 22:17:09">
+            
+                <img src="https://avatars.slack-edge.com/2023-09-21/5921741643494_a59f0c723aa600a8676a_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Sara Beery
+                     <span class="print-only user-email">(sbeery@caltech.edu)</span>
+                </div>
+                <a href="#2024-10-08 22:17:09"><div class="time">2024-10-08 22:17:09</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* @Dan Morris @Tanya Birch</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-08 22:21:27">
+            
+                <img src="https://avatars.slack-edge.com/2021-01-11/1652047804128_8216640d1f5e36e41ef5_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Dan Morris
+                     <span class="print-only user-email">(agentmorris@gmail.com)</span>
+                </div>
+                <a href="#2024-10-08 22:21:27"><div class="time">2024-10-08 22:21:27</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Can you clarify what you mean by "get grouped in as 'empty' AND 'human'"?</p>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        👋 Tiziana Gelmi Candusso
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-09 11:22:22">
+            
+                <img src="https://avatars.slack-edge.com/2023-09-08/5869613577747_0ca93b5fea80e0bd83bd_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Tiziana Gelmi Candusso
+                     <span class="print-only user-email">(tiziana.gelmi@gmail.com)</span>
+                </div>
+                <a href="#2024-10-09 11:22:22"><div class="time">2024-10-09 11:22:22</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* For example if its 3 photos: animal, animal, empty, the AI has tagged all as an animal. However, the cameras aren't set to take bursts, pictures are at least 30s apart, but the grouping on WI makes it into a 'burst'.</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-09 11:56:06">
+            
+                <img src="https://avatars.slack-edge.com/2021-01-11/1652047804128_8216640d1f5e36e41ef5_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Dan Morris
+                     <span class="print-only user-email">(agentmorris@gmail.com)</span>
+                </div>
+                <a href="#2024-10-09 11:56:06"><div class="time">2024-10-09 11:56:06</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Ah, thanks, I understand now.  When you upload images to a sequence-based project, sequence boundaries are based on a fixed 60-second timeout.  The image content isn't used when creating sequences, so AI isn't a factor here.</p>
+
+<p>The relevant bit of documentation is here:
+<a href="https://www.wildlifeinsights.org/get-started/basics/projects">https://www.wildlifeinsights.org/get-started/basics/projects</a></p>
+
+<p>Hope that helps!</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-09 12:59:07">
+            
+                <img src="https://avatars.slack-edge.com/2023-09-08/5869613577747_0ca93b5fea80e0bd83bd_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Tiziana Gelmi Candusso
+                     <span class="print-only user-email">(tiziana.gelmi@gmail.com)</span>
+                </div>
+                <a href="#2024-10-09 12:59:07"><div class="time">2024-10-09 12:59:07</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* ohhh that explains it all! thank you!!!</p>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        👍 Dan Morris
                         </div>
                     
 		</div>

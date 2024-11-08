@@ -2009,6 +2009,262 @@ Regarding that the problem might be too easy, next to MegaDescriptor we are tryi
                 
             
         
+            
+                
+                    <div class="message-container">
+        <div id="2024-09-02 07:56:14">
+            
+                <img src="https://avatars.slack-edge.com/2021-10-15/2610037619715_cbf5c664d97003d121d5_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Kostas Papafitsoros
+                     <span class="print-only user-email">(k.papafitsoros@qmul.ac.uk)</span>
+                </div>
+                <a href="#2024-09-02 07:56:14"><div class="time">2024-09-02 07:56:14</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Hi @Jason Holmberg (Wild Me) , is there a way to cite miewid, eg paper or report?</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-09-02 12:52:07">
+            
+                <img src="https://secure.gravatar.com/avatar/75b2d375f73ac75835d06da1532e65b0.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Jason Holmberg (Wild Me)
+                     <span class="print-only user-email">(holmbergius@gmail.com)</span>
+                </div>
+                <a href="#2024-09-02 12:52:07"><div class="time">2024-09-02 12:52:07</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* @Lasha Otarashvili How would you like to cite MiewID, and should we add a citation.cff file to the repo?</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-09-03 19:53:25">
+            
+                <img src="https://avatars.slack-edge.com/2024-03-08/6769563197699_95c7456d1593307f36b5_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Lasha Otarashvili
+                     <span class="print-only user-email">(otarashvililasha@gmail.com)</span>
+                </div>
+                <a href="#2024-09-03 19:53:25"><div class="time">2024-09-03 19:53:25</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* Hi @Kostas Papafitsoros a writeup is underway. I have added a way to cite &lt;http://@misc{WildMe2023,%20%20%20author%20=%20{Otarashvili,%20Lasha},%20%20%20title%20=%20{MiewID},%20%20%20year%20=%20{2023},%20%20%20url%20=%20{https://github.com/WildMeOrg/wbia-plugin-miew-id},%20%20%20doi%20=%20{10.5281/zenodo.13647526},%20}|here&gt;</p>
+                    
+                    
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-09-03 20:07:20">
+            
+                <img src="https://avatars.slack-edge.com/2024-03-08/6769563197699_95c7456d1593307f36b5_72.jpg" class="user_icon_reply" />
+            
+            
+                <div class="reply">
+            
+                <div class="username">Lasha Otarashvili
+                     <span class="print-only user-email">(otarashvililasha@gmail.com)</span>
+                </div>
+                <a href="#2024-09-03 20:07:20"><div class="time">2024-09-03 20:07:20</div></a>
+                <div class="msg">
+                    <p><strong><em>*Thread Reply:</em></strong>* @Jess Tam Hi Jess, <a href="https://github.com/WildMeOrg/wbia-plugin-miew-id/tree/main/wbia_miew_id/examples">example notebooks </a>are great to get going fast. They are done on a Beluga dataset that is single-viewpoint, though. For multiple distinct viewpoints (such as left vs right) for species that do not exhibit bilateral symmetry, the go-to approach is to handle each viewpoint+name combination as a separate individual. This can be done by <a href="https://github.com/WildMeOrg/wbia-plugin-miew-id?tab=readme-ov-file#configuration-file">configuring the name_keys argument</a>. Conversely, there are cases where this is too aggressive, such as when you have viewpoints like 'frontleft', 'frontright' and are still partially matchable. In such cases you might opt to let the model learn to match cross-viewpoint, or map them to common 'left' and 'right' depending on experimentation. The model gets quite good at partial matching if the dataset allows for it.</p>
+
+<p>Our general pipeline also includes orientation normalization - rotation only. This is done for legacy for compatibility with other algos we use. The CNN backbone is good at learning invariance. We have been trying to reduce that requirement by training with rotation augmentation, so that the model is not handicapped by it - so not a hard requirement. It is still not fully invariant to extreme (30deg+) rotation for most of the terrestrial species.</p>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        ❤️ Jess Tam
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-08-20 07:06:39">
+            
+                <img src="https://avatars.slack-edge.com/2022-11-09/4345761822595_8ddb0ad25ec671ccef4d_72.jpg" class="user_icon" />
+            
+            
+                <div class="message">
+            
+                <div class="username">Anton Alvarez
+                     <span class="print-only user-email">(aalvarez@wwf.es)</span>
+                </div>
+                <a href="#2024-08-20 07:06:39"><div class="time">2024-08-20 07:06:39</div></a>
+                <div class="msg">
+                    <p>If it went unnoticed, I'll put it here.</p>
+                    <div class="message-attachment"
+                            style="border-color: #D0D0D0">
+                            
+                            
+                                <div class="attachment-author">
+                                    
+                                        <img src="https://avatars.slack-edge.com/2023-06-22/5477501337601_ed0c1e1b182b69923cdd_48.jpg" class="icon">
+                                    }
+                                    <a href="https://aiforconservation.slack.com/team/U04M9CDNUCF">
+                                    Risa Shinoda
+                                    </a><span class="print-only">(https://aiforconservation.slack.com/team/U04M9CDNUCF)</span>
+                                </div>
+                            
+                            
+                                
+                                <div class="link-title"><a href=""></a></div>
+                                <div class="link-text">
+                                    &lt;p&gt;Introducing “PetFace: A Large-Scale Dataset and Benchmark for Animal Identification” (ECCV2024) !! 🐦&lt;/p&gt;
+
+&lt;p&gt;✅250k IDs (The largest ever!)
+✅13 species
+✅Fine-grained annotations&lt;/p&gt;
+
+&lt;p&gt;Website: &lt;a href=&#34;https://dahlian00.github.io/PetFacePage/&#34;&gt;https://dahlian00.github.io/PetFacePage/&lt;/a&gt;
+Paper: &lt;a href=&#34;https://arxiv.org/abs/2407.13555&#34;&gt;https://arxiv.org/abs/2407.13555&lt;/a&gt;&lt;/p&gt;
+                                </div>
+                                
+                                
+    
+        <!-- no preview available -->
+    
+                                
+                                
+                                    <div class="attachment-footer">
+                                        <img src="" class="icon" />
+                                        Slack Conversation
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        ❤️ Lukas Picek, Subhransu Maji, Fagner Cunha, Jess Tam, Kit Lewers, Shawn Johnson, Jason Holmberg (Wild Me)
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
+            
+                
+                    <div class="message-container">
+        <div id="2024-10-31 11:37:31">
+            
+                <img src="https://secure.gravatar.com/avatar/75b2d375f73ac75835d06da1532e65b0.jpg?s=72&amp;d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png" class="user_icon" />
+            
+            
+                <div class="message">
+            
+                <div class="username">Jason Holmberg (Wild Me)
+                     <span class="print-only user-email">(holmbergius@gmail.com)</span>
+                </div>
+                <a href="#2024-10-31 11:37:31"><div class="time">2024-10-31 11:37:31</div></a>
+                <div class="msg">
+                    <p><a href="https://aiforconservation.slack.com/archives/CLWGQ4BJ6/p1730387852031829">https://aiforconservation.slack.com/archives/CLWGQ4BJ6/p1730387852031829</a></p>
+                    <div class="message-attachment"
+                            >
+                            
+                            
+                                <div class="attachment-author">
+                                    
+                                        <img src="https://avatars.slack-edge.com/2024-03-08/6769563197699_95c7456d1593307f36b5_48.jpg" class="icon">
+                                    }
+                                    <a href="https://aiforconservation.slack.com/team/U05SHB1V9KP">
+                                    Lasha Otarashvili
+                                    </a><span class="print-only">(https://aiforconservation.slack.com/team/U05SHB1V9KP)</span>
+                                </div>
+                            
+                            
+                                
+                                <div class="link-title"><a href=""></a></div>
+                                <div class="link-text">
+                                    &lt;p&gt;New model is out for wild animal re-id, covering 64 species from mixed data sources.&lt;/p&gt;
+
+&lt;p&gt;The is Wild Me&#39;s strongest generation of re-id model at use on Wildbook platforms, covering cetaceans, mammals, carnivores and more. The model shows state-of-the-art generalization ability for search queries on Wildbook platforms. For this release, the model is stripped down and made easy to run and experiment with.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://huggingface.co/conservationxlabs/miewid-msv3&#34;&gt;Model weights and List of species included  &lt;/a&gt;
+&lt;a href=&#34;https://github.com/WildMeOrg/wbia-plugin-miew-id/tree/main/wbia_miew_id/examples&#34;&gt;Ready-to-use scripts&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefuly this helps not only ones that have or have not worked with MiewID previously. The knowledge transfer lowers the barrier and opens up the possibility to adapt deep learning models to datasets previously too small to train.&lt;/p&gt;
+                                </div>
+                                
+                                
+    
+        <!-- no preview available -->
+    
+                                
+                                    <div class="print-only">Original URL: https://aiforconservation.slack.com/archives/CLWGQ4BJ6/p1730387852031829</div>
+                                
+                                
+                                    <div class="attachment-footer">
+                                        <img src="" class="icon" />
+                                        Thread in Slack Conversation
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                    
+                    
+                        <div class="message-reaction">
+                        🎉 Justin Kay, Timm Haucke, Dan Morris, Aakash Gupta, Otto Brookes, Anton Alvarez
+                        </div>
+                    
+                        <div class="message-reaction">
+                        😎 Jon Van Oast
+                        </div>
+                    
+		</div>
+            </div>
+        </div>
+    </div>
+                
+            
+        
     </div>
 </div>
 
