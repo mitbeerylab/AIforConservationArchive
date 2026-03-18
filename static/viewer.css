@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
-
 html {
     font-family: 'Lato', sans-serif;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -12,8 +12,6 @@ body {
 #slack-archive-viewer {
     padding: 0;
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
 }
 
 #sidebar {
@@ -66,11 +64,13 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .message-container {
     clear: left;
     min-height: 56px;
+    margin-bottom: 4px;
 }
 
 .message-container:first-child {
@@ -83,8 +83,8 @@ body {
 
 .message-container .user_icon {
     background-color: rgb(248, 244, 240);
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
     border-radius: 0.2em;
     display: inline-block;
     vertical-align: top;
@@ -94,13 +94,12 @@ body {
 
 .message-container .user_icon_reply {
     background-color: rgb(248, 244, 240);
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
     border-radius: 0.2em;
     display: inline-block;
     vertical-align: top;
     margin-right: 0.65em;
-    margin-left: 40px;
     float: left;
 }
 
@@ -126,17 +125,21 @@ body {
     vertical-align: top;
     line-height: 1;
     width: calc(100% - 3em);
+    margin-bottom: -4px;
 }
 
 .message-container .reply {
     vertical-align: top;
     line-height: 1;
-    width: calc(100% - 3em);
-    margin-left: 80px;
+    width: calc(97% - 3em);
+    margin-left: 60px;
+    margin-bottom: 10px;
 }
 
 .message-container .msg p {
     white-space: pre-wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .message-container .msg pre {
@@ -145,12 +148,18 @@ body {
 }
 
 .message-container .message .msg {
-    line-height: 1.5;
+    line-height: 1.4666;
+    padding-top: 2px;
+    margin-left: 60px;
 }
 
+
 .message-container .reply .msg {
-    line-height: 1.5;
+    line-height: 1.4666;
+    margin-top: 8px;
+    margin-left: 56px;
 }
+
 
 .message-container .message .msg a {
     overflow-wrap: anywhere;
@@ -161,8 +170,10 @@ body {
 }
 
 .message-container .message-attachment {
-    padding-left: 5px;
-    border-left: 2px gray solid;
+    padding-left: 20px;
+    border-left: 12px gray solid;
+    margin-left: 5px;
+    margin-bottom: 10px;
     overflow-wrap: anywhere;
 }
 
@@ -173,6 +184,34 @@ body {
 .message-container .icon {
     max-width: 10px;
 }
+
+.message-container .old-message {
+    color: #999999;
+}
+
+.message-reaction {
+    transform: scale(115%);
+    margin: 0 55px 20px;
+    transform-origin: left;
+}
+
+blockquote {
+    padding-left: 20px;
+    border-left: 12px gray solid;
+    margin-left: 5px;
+    margin-top: -2px;
+    margin-bottom: 2px;
+}
+
+.msg ul, .msg ol {
+  padding-left: 20px;
+  margin-left: 60px;
+  margin-bottom: -20px;
+  li {
+    margin: -10px auto;
+  }
+}
+
 
 .channel_join .msg, .channel_topic .msg,
 .bot_add .msg, .app_conversation_join .msg {
@@ -236,6 +275,6 @@ a:hover {
 }
 
 img.preview {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
